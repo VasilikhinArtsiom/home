@@ -5,34 +5,451 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
+
     <header> 
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="" class="btn">
+        <nav class="navbar  fixed-top justify-content-between">
+            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 social">
+                <a href="https://ru-ru.facebook.com" class="btn">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="btn">
+                <a href="https://twitter.com" class="btn">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="" class="btn">
+                <a href="https://plus.google.com" class="btn">
                     <i class="fab fa-google-plus-g"></i>
                 </a>
-                <a href="" class="btn">
+                <a href="https://dribbble.com" class="btn">
                     <i class="fab fa-dribbble"></i>
                 </a>
-                <a href="" class="btn">
+                <a href="https://www.linkedin.com" class="btn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 loggo">
+                <a class="navbar-brand" href="#home"><img src="./img/logo.png" alt=""></a>
+            </div>
+			<nav class="navbar navbar-expand-sm navbar-light">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navigation" id="collapsibleNavId">
+                    <ul id="menu" class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pages" class="nav-link">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </div>
+	        <div class="wrapper">
+                <div class="contur">
+                    <input type="search" class="inputer" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
+    <section id="home" class="header-banner">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-10 header-slider">
+                    <div class="slide1">
+                        <h1>Your <span class="colortext1">service</span> ready to launch</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                        <button type="button">see our work</button>
+                    </div>
+                    <div class="slide2">
+                        <h1>Your <span class="colortext2">service</span> ready to launch</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                        <button type="button">see our work</button>
+                    </div>
+                    <div class="slide3">
+                        <h1>Your <span class="colortext3">service</span> ready to launch</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                        <button type="button">see our work</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pages" class="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-6">
+                    <div class="row left-columns">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-box">
+                            <h3>Creative ideas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <a href="#">read more</a>
+                        </div>
+                        <img class="col-xl-6 col-lg-6 col-md-12 col-sm-12" src="./img/replace-image1.jpg" alt="">
+                    </div>
+                    <div class="row left-columns">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-box">
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <a href="#">read more</a>
+                        </div>
+                        <img class="col-xl-6 col-lg-6 col-md-12 col-sm-12" src="./img/replace-image2.jpg" alt="">
+                    </div>
+                    <div class="row left-columns">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-box">
+                            <h3>Launch</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <a href="#">read more</a>
+                        </div>
+                        <img class="col-xl-6 col-lg-6 col-md-12 col-sm-12" src="./img/replace-image3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 d-flex align-content-center flex-wrap">
+                    <h2>A user-friendly Themes, build with usability in mind great <span>modern design</span> and unique</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                    <button>see our work</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-work">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-9">
+                    <h2>simple & best way to showcase your work</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-12 gallery">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                    <div class="parrent"> 
+                        <div id="button_one" class="col-xl-1">brand</div>
+                        <div id="button_two" class="col-xl-1">mockup</div>
+                        <div id="button_all"  class="col-xl-1" >all</div>
+                        <div id="button_three" class="col-xl-1" >websites</div>
+                        <div id="button_four" class="col-xl-1" >ui/ux</div>
+                        <div  class="col-xl-3 sep"></div>
+                        <img id="one" class=" col-xl-8 picone" src="./img/cup.jpg" alt="cup">
+                        <img id="four" class=" col-xl-4 pictwo"  src="./img/fresh.jpg" alt="fresh">
+                        <img id="two" class="col-xl-4 picone" src="./img/cap.jpg" alt="cap">
+                        <img id="three" class="col-xl-4 picone" src="./img/card.jpg" alt="card">
+                    </div>
+                </div>
+            </div>      
+            <div class="row text-center">
+                <div class="col-xl-12">
+                    <button>see our work</button>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="portfolio" class="how-work">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8">
+                    <h2>Example of work process</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                           <p>1</p>
+                        </div>
+                        <p class="how-link">research</p>
+                    </a>
+                </div>
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                            <p>2</p>
+                        </div>
+                        <p class="how-link">sketching</p>
+                    </a>
+                </div>
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                            <p>3</p>
+                        </div>
+                        <p class="how-link">Design approch</p>
+                    </a>
+                </div>
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                            <p>4</p>
+                        </div>
+                        <p class="how-link">development</p>
+                    </a>
+                </div>
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                            <p>5</p>
+                        </div>
+                        <p class="how-link">start testing</p>
+                    </a>
+                </div>
+                <div class="col-xl-2">
+                    <a class="noline" href="#">
+                        <div class="sifr">
+                            <p>6</p>
+                        </div>
+                        <p class="how-link">product launch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-serveces">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8">
+                    <h2>Our amazing service</h2>
+                    <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xl-4 lamp-box service">
+                    <div class="lamp">
+                    </div>
+                    <h3>graphic design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="col-xl-4 site-development-box service">
+                    <div class="site-development img">
+                    </div>
+                    <h3>site development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="col-xl-4 optimization-box service">
+                    <div class="optimization">
+                    </div>
+                    <h3>Seo optimization</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="col-xl-4 mobile-development-box service">
+                    <div class="mobile-development">
+                    </div>
+                    <h3>mobile development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="col-xl-4 support-box service">
+                    <div class="support">
+                    </div>
+                    <h3>support 24 hours</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="col-xl-4 hosting-box service">
+                    <div class="hosting">
+                    </div>
+                    <h3>free hosting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-4">
+                    <h2>Client About Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8 header-slider">
+                    <div class="slide1">
+                        <img src="./img/image-client.png" alt="client">
+                        <p class="client">Client</p>
+                        <p class="client-name">john doe</p>
+                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                        <img src="./img/stars.png" alt="stars">
+                    </div>
+                    <div class="slide2">
+                        <img src="./img/image-client.png" alt="client">
+                        <p class="client">Client</p>
+                        <p class="client-name">john doe</p>
+                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                        <img src="./img/stars.png" alt="stars">
+                    </div>
+                    <div class="slide3">
+                        <img src="./img/image-client.png" alt="client">
+                        <p class="client">Client</p>
+                        <p class="client-name">john doe</p>
+                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+                        <img src="./img/stars.png" alt="stars">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8">
+                    <h2>From blog news</h2>
+                    <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 mainnew">
+                        <div class="row">
+                    <img class="col-xl-4 col-lg-4 col-md-12 col-sm-12" src="./img/mobil.jpg" alt="Mobile">
+                    <div class="col-xl-8 col-lg-8  col-md-12 col-sm-12 main-blog-box">
+                        <p class="post-admin">25 May 2018 Admin</p>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="blog-box">
+                            <p class="post-admin">25 May 2018 Admin</p>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="blog-box">
+                            <p class="post-admin">25 May 2018 Admin</p>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="blog-box">
+                            <p class="post-admin">25 May 2018 Admin</p>
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="form">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8">
+                    <h2>Feedback</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+            </div>
+            <form>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-xl-4">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Full name">
+                    </div>
+                    <div class="form-group col-xl-4">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Contact email">
+                    </div>
+                    <div class="form-group col-xl-8">
+                        <label>Message</label>
+                        <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="agreement">
+                        <label class="custom-control-label" for="agreement">Subscribe to the newsletter?</label>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit">send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <ul class="nav nav-inline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4">
+                    <a href="https://ru-ru.facebook.com" class="btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.behance.net" class="btn">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="https://twitter.com" class="btn">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="btn">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.pinterest.com" class="btn">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="https://dribbble.com" class="btn">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3">
+                    <p>Copyrights free-psd-template.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/js.js"></script>
 </body>
 </html>
